@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Image Gallery</h1>
+    </header>
+
+    <!-- Gallery Container -->
+    <section class="gallery">
+        <div class="image-container">
+            <img src="http://getwallpapers.com/wallpaper/full/4/1/8/891626-best-wallpaper-of-study-1920x1200.jpg" alt="Image 1" class="gallery-img" onclick="openModal(this)">
+            <img src="https://images2.alphacoders.com/115/thumb-1920-115780.jpg" alt="Image 2" class="gallery-img" onclick="openModal(this)">
+            <img src="https://wallpaperaccess.com/full/81235.jpg" alt="Image 3" class="gallery-img" onclick="openModal(this)">
+            <img src="https://www.pixelstalk.net/wp-content/uploads/2016/05/Stunningly-beautiful-lake-1920x1200-wallpapers-free.jpg" alt="Image 4" class="gallery-img" onclick="openModal(this)">
+            <img src="https://sahinyavuz.av.tr/wp-content/uploads/2017/12/126746-widescreen-library-background-1920x1200-for-mac.jpg" alt="Image 5" class="gallery-img" onclick="openModal(this)">
+            <img src="http://getwallpapers.com/wallpaper/full/7/e/7/1207535-desktop-wallpapers-hd-1920x1200-1920x1200-image.jpg" alt="Image 6" class="gallery-img" onclick="openModal(this)">
+            <img src="http://www.pixelstalk.net/wp-content/uploads/2016/05/Download-water-lily-hd-1920x1200-wallpapers.jpg" alt="Image 7" class="gallery-img" onclick="openModal(this)">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.sIefTIDWOCpMmTYBe4358gHaEo&pid=Api&P=0&h=180" alt="Image 8" class="gallery-img" onclick="openModal(this)">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.jFtwd0wXngGWHYdTHsdd8wHaEo&pid=Api&P=0&h=180" alt="Image 9" class="gallery-img" onclick="openModal(this)">
+            <img src="http://2.bp.blogspot.com/-j6LNy63_CGA/UTteWhdBjLI/AAAAAAAAD7g/h_wtiqpDGjU/s1600/1+(11).jpg" alt="Image 10" class="gallery-img" onclick="openModal(this)">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.DhwFmpHL9y92EBY5ueP2eQHaEo&pid=Api&P=0&h=180" alt="Image 11" class="gallery-img" onclick="openModal(this)">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.oIAxJ8I7A5--KhvaLbTNsgHaEo&pid=Api&P=0&h=180" alt="Image 12" class="gallery-img" onclick="openModal(this)">
+        </div>
+    </section>
+
+    <!-- Modal for Viewing Full Images -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modal-img">
+        <button id="prevBtn" onclick="prevImage()">&#10094;</button>
+        <button id="nextBtn" onclick="nextImage()">&#10095;</button>
+        
+    </div>
+
+   <!-- Footer Section -->
+   <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Image Gallery. All Rights Reserved.</p>
+            <p>Designed and Developed  by SUSHMITHA REDDY</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
